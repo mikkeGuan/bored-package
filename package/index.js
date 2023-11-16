@@ -4,8 +4,10 @@ const BoredAPI = {
   // Fetch a random activity
   getRandomActivity: async () => {
     try {
-      const response = await axios.get('https://www.boredapi.com/api/activity');
-      return response.data;
+      const response = await fetch('https://www.boredapi.com/api/activity');
+      const activity = await response.json()
+      console.log(activity)
+      return activity;
     } catch (error) {
       throw new Error('Failed to fetch random activity');
     }
@@ -14,8 +16,9 @@ const BoredAPI = {
   // Fetch an activity by type
   getActivityByType: async (type) => {
     try {
-      const response = await axios.get(`https://www.boredapi.com/api/activity?type=${type}`);
-      return response.data;
+      const response = await fetch(`https://www.boredapi.com/api/activity?type=${type}`);
+      const data = await response.json();
+      return data;
     } catch (error) {
       throw new Error('Failed to fetch activity by type');
     }
@@ -23,8 +26,9 @@ const BoredAPI = {
 
   getActivityByParticipants: async (participants) => {
     try {
-      const response = await axios.get(`https://www.boredapi.com/api/activity?participants=${participants}`);
-      return response.data;
+      const response = await fetch(`https://www.boredapi.com/api/activity?participants=${participants}`);
+      const data = await response.json();
+      return data;
     } catch (error) {
       throw new Error('Failed to fetch activity by participants');
     }
@@ -32,8 +36,9 @@ const BoredAPI = {
 
   getActivityByPrice: async (price) => {
     try {
-      const response = await axios.get(`https://www.boredapi.com/api/activity?price=${price}`);
-      return response.data;
+      const response = await fetch(`https://www.boredapi.com/api/activity?price=${price}`);
+      const data = await response.json();
+      return data;
     } catch (error) {
       throw new Error('Failed to fetch activity by price');
     }
