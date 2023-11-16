@@ -11,7 +11,7 @@ const BoredAPI = {
     }
   },
 
-  // Fetch an activity by a specific type
+  // Fetch an activity by type
   getActivityByType: async (type) => {
     try {
       const response = await axios.get(`https://www.boredapi.com/api/activity?type=${type}`);
