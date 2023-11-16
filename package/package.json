@@ -1,22 +1,21 @@
 {
   "name": "bored-package",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "Package that fetches data from bored API",
   "main": "index.js",
   "dependencies": {
-    "axios": "1.6.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikkeGuan/Bored-API-package.git"
+    "url": "git+https://github.com/mikkeGuan/bored-package.git"
   },
   "author": "Ruichao Guan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mikkeGuan/Bored-API-package/issues"
+    "url": "https://github.com/mikkeGuan/bored-package/issues"
   },
-  "homepage": "https://github.com/mikkeGuan/Bored-API-package#readme"
+  "homepage": "https://github.com/mikkeGuan/bored-package#readme"
 }

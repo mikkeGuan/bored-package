@@ -1,4 +1,4 @@
-﻿# bored-api-package
+﻿# bored-package
 
 # Introduction
 Welcome to my first ever npm package. With this package you can fetch data from bored Api. Learn more about the api documentation here 

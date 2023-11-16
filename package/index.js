@@ -1,4 +1,3 @@
-const axios = require('axios');
 
 const BoredAPI = {
   // Fetch a random activity
@@ -6,7 +5,6 @@ const BoredAPI = {
     try {
       const response = await fetch('https://www.boredapi.com/api/activity');
       const activity = await response.json()
-      console.log(activity)
       return activity;
     } catch (error) {
       throw new Error('Failed to fetch random activity');
