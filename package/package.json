@@ -1,6 +1,6 @@
 {
   "name": "bored-package",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "Package that fetches data from bored API",
   "main": "index.js",
   "dependencies": {
@@ -12,6 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/mikkeGuan/bored-package.git"
   },
+  "keywords": [
+    "BoredAPI",
+    "async/await",
+    "fetch",
+    "activity",
+    "error handling"
+  ],
   "author": "Ruichao Guan",
   "license": "ISC",
   "bugs": {
